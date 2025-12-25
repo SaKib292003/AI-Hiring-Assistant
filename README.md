@@ -30,21 +30,20 @@ This can be extended to databases in production.
 ## Run Locally
 ```bash
 streamlit run app.py
-
-
+```
 ## 📸 Application Screenshots
 
 ### 🏠 Home Screen
 ![Home Screen](screenshots/01_home.png)
 
 ### 🧑 Candidate Details Collection
-![Candidate Details](screenshots/02_candidate_details.png)
+![Candidate Details](Screenshots/02_candidate_details.png)
 
 ### ▶️ Interview Start Screen
-![Start Interview](screenshots/03_start_interview.png)
+![Start Interview](Screenshots/03_start_interview.png)
 
 ### 🧠 Technical Interview Questions
-![Technical Interview](screenshots/04_technical_interview.png)
+![Technical Interview](Screenshots/04_technical_interview.png)
 
 ### ✅ Interview Completion
-![Completion Screen](screenshots/05_completion.png)
+![Completion Screen](Screenshots/05_completion.png)
