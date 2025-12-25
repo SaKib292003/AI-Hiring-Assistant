@@ -130,13 +130,23 @@ elif (
     prompt = f"""
 You are a technical interviewer.
 
-Candidate tech stack:
+Based on the candidate's tech stack below:
 {tech_stack}
 
-Generate 3 to 5 technical interview questions
-for each technology mentioned.
-Return them as a numbered list.
+Generate 3 to 5 CLEAR, DIRECT technical interview QUESTIONS.
+
+Rules:
+- Each item MUST be a question
+- Each question MUST end with a question mark (?)
+- Do NOT return topics or headings
+- Do NOT include explanations
+- Return ONLY a numbered list of questions
+
+Example:
+1. What is the difference between stack and queue?
+2. Explain encapsulation in OOP with an example.
 """
+
 
     response = co.chat(
         model="command-a-03-2025",
@@ -145,9 +155,12 @@ Return them as a numbered list.
 
     # Split questions into list
     questions = [
-        q.strip() for q in response.text.split("\n")
-        if q.strip() and q.strip()[0].isdigit()
-    ]
+    q.strip()
+    for q in response.text.split("\n")
+    if q.strip().startswith(tuple(str(i) for i in range(1, 10)))
+    and q.strip().endswith("?")
+]
+
 
     st.session_state.tech_questions = questions
     st.rerun()
