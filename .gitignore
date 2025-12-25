@@ -1,0 +1,4 @@
+.env
+interview_results.csv
+__pycache__/
+venv/

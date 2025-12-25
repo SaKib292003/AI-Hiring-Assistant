@@ -1,0 +1,5 @@
+streamlit
+python-dotenv
+google-genai
+openai
+cohere
