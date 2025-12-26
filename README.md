@@ -1,5 +1,8 @@
 # AI Hiring Assistant
 
+🌐 **Live Demo:** https://ai-hiring-assistant-2r6ndzg6nr2toikrncx3tc.streamlit.app/
+
+
 This project is an AI-powered hiring assistant built using Streamlit and Cohere.
 
 ## Features
@@ -47,3 +50,4 @@ streamlit run app.py
 
 ### ✅ Interview Completion
 ![Completion Screen](Screenshots/05_completion.png)
+
